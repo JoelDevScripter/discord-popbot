@@ -1,1 +1,35 @@
 INFO: 2025/09/08 09:18:07 logger.go:24: Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/08 09:53:48 logger.go:24: /ping command registered successfully
+INFO: 2025/09/08 09:53:48 logger.go:24: Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/08 09:55:58 logger.go:24: Bot shutting down.
+INFO: 2025/09/08 09:59:36 logger.go:24: Global /ping command registered
+INFO: 2025/09/08 09:59:37 logger.go:24: Test guild /ping command registered
+INFO: 2025/09/08 09:59:37 logger.go:24: Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/08 10:40:04 logger.go:24: Bot shutting down.
+INFO: 2025/09/08 10:48:17 logger.go:24: Global /ping command registered
+INFO: 2025/09/08 10:48:17 logger.go:24: Test guild /ping command registered
+INFO: 2025/09/08 10:48:17 logger.go:24: Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/08 10:50:22 logger.go:24: !ping command executed by anjoelerxh
+INFO: 2025/09/08 10:51:24 logger.go:24: /ping command executed by anjoelerxh
+INFO: 2025/09/08 11:15:54 logger.go:24: /ping command executed by darik921
+INFO: 2025/09/08 23:08:07 logger.go:24: /ping command executed by anjoelerxh
+INFO: 2025/09/09 09:50:46 logger.go:24: Bot shutting down.
+INFO: 2025/09/09 10:09:25 logger.go:24: Global /ping command registered
+INFO: 2025/09/09 10:09:25 logger.go:24: Test guild /ping command registered
+INFO: 2025/09/09 10:09:25 logger.go:24: Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/09 10:14:01 logger.go:24: Bot shutting down.
+INFO: 2025/09/09 10:14:53 logger.go:24: Global /ping command registered
+INFO: 2025/09/09 10:14:53 logger.go:24: Test guild /ping command registered
+INFO: 2025/09/09 10:14:53 logger.go:24: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/09 10:16:24 logger.go:24: !ping command executed by anjoelerxh
+INFO: 2025/09/09 10:18:22 logger.go:24: ⚠️ Bot shutting down.
+INFO: 2025/09/09 10:18:38 logger.go:30: Global /ping command registered
+INFO: 2025/09/09 10:18:38 logger.go:30: Test guild /ping command registered
+INFO: 2025/09/09 10:18:38 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/09 11:31:37 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/09 11:31:53 logger.go:30: Global /ping command registered
+INFO: 2025/09/09 11:31:53 logger.go:30: Test guild /ping command registered
+INFO: 2025/09/09 11:31:53 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/10 00:30:08 logger.go:30: Global /ping command registered
+INFO: 2025/09/10 00:30:08 logger.go:30: Test guild /ping command registered
+INFO: 2025/09/10 00:30:08 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.

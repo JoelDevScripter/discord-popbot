@@ -1,6 +1,7 @@
 package logger
 
 import (
+	"io"
 	"log"
 	"os"
 )
@@ -11,13 +12,18 @@ var (
 )
 
 func init() {
+	// Abrir archivo
 	file, err := os.OpenFile("bot.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	infoLogger = log.New(file, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
-	errorLogger = log.New(file, "ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
+	// MultiWriter para consola + archivo
+	mwInfo := io.MultiWriter(os.Stdout, file)
+	mwError := io.MultiWriter(os.Stderr, file)
+
+	infoLogger = log.New(mwInfo, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
+	errorLogger = log.New(mwError, "ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
 }
 
 func Info(v ...interface{}) {
