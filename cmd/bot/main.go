@@ -51,11 +51,13 @@ func main() {
 	// ----------------------------
 	dg.AddHandler(commands.HandlePrefixPing)
 	dg.AddHandler(commands.HandlePrefixProfile)
+	dg.AddHandler(commands.HandlePrefixBalance)
+	dg.AddHandler(commands.HandlePrefixDaily)
 
 	// ----------------------------
 	// Handlers automáticos con registro obligatorio
 	// ----------------------------
-	commands.SetupHandlers(dg) // Aquí se aplicará la verificación para futuros comandos
+	commands.SetupHandlers(dg)
 
 	// ----------------------------
 	// Abrir conexión

@@ -33,3 +33,49 @@ INFO: 2025/09/09 11:31:53 logger.go:30: ✅ Bot is running. Press CTRL+C to exit
 INFO: 2025/09/10 00:30:08 logger.go:30: Global /ping command registered
 INFO: 2025/09/10 00:30:08 logger.go:30: Test guild /ping command registered
 INFO: 2025/09/10 00:30:08 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/10 08:43:10 logger.go:30: Global /ping command registered
+INFO: 2025/09/10 08:43:10 logger.go:30: Test guild /ping command registered
+INFO: 2025/09/10 08:43:10 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/10 10:39:36 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/10 10:40:07 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/10 10:40:35 logger.go:30: !ping executed by anjoelerxh
+INFO: 2025/09/10 10:47:37 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/10 10:47:52 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/10 11:16:05 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/10 11:16:18 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/10 11:19:25 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/10 11:19:47 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/10 11:22:44 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/10 11:23:06 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/10 11:27:20 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/10 11:27:37 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/10 11:47:55 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/10 11:48:09 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 16:28:12 logger.go:30: Registered new command: balance
+INFO: 2025/09/20 16:28:12 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 16:53:43 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/20 16:54:00 logger.go:30: Registered new command: daily
+INFO: 2025/09/20 16:54:00 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 17:00:38 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/20 17:00:51 logger.go:30: Updated command: daily
+INFO: 2025/09/20 17:00:51 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 17:02:45 logger.go:30: /ping executed by anjoelerxh
+INFO: 2025/09/20 17:18:02 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/20 17:18:21 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 17:24:25 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/20 17:24:38 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 17:29:14 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/20 17:29:25 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 17:29:35 logger.go:30: !ping executed by anjoelerxh
+INFO: 2025/09/20 17:31:59 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/20 17:32:17 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 17:33:48 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/20 17:34:35 logger.go:30: Updated command: daily
+INFO: 2025/09/20 17:34:35 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 22:36:42 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 22:38:45 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/20 22:38:57 logger.go:30: Updated command: balance
+INFO: 2025/09/20 22:38:57 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 22:43:58 logger.go:30: ⚠️ Bot shutting down.
+INFO: 2025/09/20 22:44:11 logger.go:30: ✅ Bot is running. Press CTRL+C to exit.
+INFO: 2025/09/20 22:53:09 logger.go:30: ⚠️ Bot shutting down.

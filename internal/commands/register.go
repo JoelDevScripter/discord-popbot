@@ -16,35 +16,74 @@ type SlashCommand struct {
 var slashCommands = []SlashCommand{
 	{GetPingCommand(), HandleSlashPing},
 	{GetProfileCommand(), HandleSlashProfile},
+	{GetBalanceCommand(), HandleSlashBalance},
+	{GetDailyCommand(), HandleSlashDaily},
+	// Nuevos comandos: solo agregas aquí
 }
 
-// SetupHandlers conecta los handlers automáticamente
+// SetupHandlers conecta los handlers automáticamente y aplica registro obligatorio
 func SetupHandlers(s *discordgo.Session) {
 	s.AddHandler(func(s *discordgo.Session, i *discordgo.InteractionCreate) {
 		if i.Type != discordgo.InteractionApplicationCommand {
 			return
 		}
+
+		name := i.ApplicationCommandData().Name
+		// Ping y Profile no requieren registro
+		if name != "ping" && name != "profile" {
+			RequireRegistrationSlash(s, i, func() {
+				for _, cmd := range slashCommands {
+					if i.ApplicationCommandData().Name == cmd.Definition.Name {
+						cmd.Handler(s, i)
+					}
+				}
+			})
+			return
+		}
+
 		for _, cmd := range slashCommands {
-			if i.ApplicationCommandData().Name == cmd.Definition.Name {
+			if name == cmd.Definition.Name {
 				cmd.Handler(s, i)
 			}
 		}
 	})
 }
 
-// RegisterAllCommands borra y vuelve a registrar todos los slash commands
+// RegisterAllCommands registra los slash commands de manera inteligente
 func RegisterAllCommands(s *discordgo.Session) {
-	// 1. Borrar comandos viejos
-	existing, _ := s.ApplicationCommands(s.State.User.ID, "")
-	for _, cmd := range existing {
-		_ = s.ApplicationCommandDelete(s.State.User.ID, "", cmd.ID)
+	existing, err := s.ApplicationCommands(s.State.User.ID, "")
+	if err != nil {
+		logger.Error("Error fetching existing commands:", err)
+		return
 	}
 
-	// 2. Registrar nuevos
 	for _, cmd := range slashCommands {
-		_, err := s.ApplicationCommandCreate(s.State.User.ID, "", cmd.Definition)
-		if err != nil {
-			logger.Error("Error registering command:", err)
+		found := false
+		for _, e := range existing {
+			if e.Name == cmd.Definition.Name {
+				found = true
+
+				// Opcional: actualizar comando si descripción cambió
+				if e.Description != cmd.Definition.Description {
+					_, err := s.ApplicationCommandEdit(s.State.User.ID, "", e.ID, cmd.Definition)
+					if err != nil {
+						logger.Error("Error updating command:", err)
+					} else {
+						logger.Info("Updated command:", cmd.Definition.Name)
+					}
+				}
+
+				break
+			}
+		}
+
+		if !found {
+			_, err := s.ApplicationCommandCreate(s.State.User.ID, "", cmd.Definition)
+			if err != nil {
+				logger.Error("Error registering command:", err)
+			} else {
+				logger.Info("Registered new command:", cmd.Definition.Name)
+			}
 		}
 	}
 }
